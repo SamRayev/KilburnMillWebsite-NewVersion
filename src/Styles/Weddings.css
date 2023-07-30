@@ -1,0 +1,258 @@
+/* Entertainment */
+
+@media screen and (max-width: 768px) {
+    .wed-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #wed-hero {
+        top: 0;
+        background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\KilburnWedding.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 400px;
+        margin-top: -180px;
+        justify-content: center;
+        color: white;
+    }
+    
+#left {
+    background: white;
+    width: 35%;
+}
+
+#left div {
+    position: absolute;
+    width: 35%;
+    bottom: 0;
+    padding-inline: 60px;
+    padding-bottom: 120px;
+}
+
+#left div h1 {
+    font-size: 26px;
+    font-weight: bold;
+    line-break: auto;
+}
+
+#left div p {
+    font-size: 16px;
+    line-height: 34px;
+    line-break: auto;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+#hero-btn {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 1vh 2vw;
+    border-radius: 40px;
+    text-align: center;
+
+}
+
+#hero-btn:hover {
+    background: rgb(54, 54, 54);
+}
+
+#left-secondary {
+    background: #CCCCCC;
+    position: relative;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    padding-left: 28px;
+    padding-right: 50px;
+    height: fit-content;
+}
+
+#left-secondary div h1 {
+    font-size: 26px;
+    font-weight: bold;
+    line-break: auto;
+    margin-bottom: 16px;
+}
+
+.wedding-text-secondary p {
+    font-size: 18px;
+}
+
+#left-tirtiary {
+    background: white;
+    position: relative;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    padding-left: 28px;
+    padding-right: 50px;
+    height: fit-content;
+}
+
+#left-tirtiary div h1 {
+    font-size: 26px;
+    font-weight: bold;
+    line-break: auto;
+    margin-bottom: 16px;
+}
+
+.wedding-container {
+    visibility: hidden;
+}
+
+.wedding {
+    width: 100vw;
+    height: auto;
+}
+
+.wedding-list ul {
+    list-style-type: disc;
+    font-size: 18px;
+    line-height: 34px;
+    width: 76vw;
+    align-items: center;
+    line-break: auto;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+#hero-btn {
+    background: black;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    padding: .8vh 2.4vw;
+    border-radius: 40px;
+    text-align: center;
+
+}
+}
+
+@media screen and (min-width: 769px) {
+    .wed-main {
+        display: flex;
+        flex-direction: row;
+    }
+#wed-hero {
+    position: relative;
+    top: 0;
+    background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\KilburnWedding.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 65%;
+    height: 1000px;
+    margin-top: -260px;
+    justify-content: center;
+    color: white;
+}
+
+#left {
+    background: white;
+    width: 35%;
+}
+
+#left div {
+    position: absolute;
+    width: 35%;
+    bottom: 0;
+    padding-inline: 60px;
+    padding-bottom: 120px;
+}
+
+#left div h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-break: auto;
+}
+
+#left div p {
+    font-size: 20px;
+    line-height: 34px;
+    line-break: auto;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+#hero-btn {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 1vh 2vw;
+    border-radius: 40px;
+    text-align: center;
+
+}
+
+#hero-btn:hover {
+    background: rgb(54, 54, 54);
+}
+
+#left-secondary {
+    background: #CCCCCC;
+    position: relative;
+    width: 100vw;
+    padding: 60px;
+    height: fit-content;
+    align-items: center;
+}
+
+#left-secondary div h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-break: auto;
+    margin-bottom: 16px;
+}
+
+#left-secondary div p {
+    font-size: 20px;
+}
+
+.wedding-text-secondary {
+    width: 65%;
+}
+#left-tirtiary {
+    background: white;
+    position: relative;
+    width: 100vw;
+    padding: 60px;
+    height: fit-content;
+    align-items: center;
+}
+
+#left-tirtiary div h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-break: auto;
+    margin-bottom: 16px;
+}
+
+.wedding-container {
+    display: flex;
+    /* Use flexbox */
+    width: 35%;
+    padding-right: 72px;
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+}
+
+.wedding {
+    width: 400px;
+    height: auto;
+}
+
+.wedding-list ul {
+    list-style-type: disc;
+    font-size: 20px;
+    line-height: 34px;
+    line-break: auto;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+}

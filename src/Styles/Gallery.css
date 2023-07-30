@@ -1,0 +1,28 @@
+#gallery {
+    width: 100vw;
+    padding: 60px;
+    padding-block: 20px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#gallery h1 {
+    font-size: 40px;
+    font-weight: bold;
+    line-break: auto;
+}
+
+.gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    max-width: 300px; /* Adjust the width as needed */
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  

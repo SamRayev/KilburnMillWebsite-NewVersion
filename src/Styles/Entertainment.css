@@ -1,0 +1,193 @@
+/* Entertainment */
+
+@media screen and (max-width: 768px) {
+    .Ent-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #ent-hero {
+        top: 0;
+        background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\KilburnEvent.jpg');
+        background-size: cover;
+        background-position: center;
+        width: auto;
+        height: 400px;
+        margin-top: -180px;
+        justify-content: center;
+        color: white;
+    }
+    
+    #left {
+        visibility: hidden;
+    }
+    .mobile-left {
+        background: white;
+        width: 100%;
+        padding: 60px;
+    }
+    .mobile-left h1 {
+        font-size: 30px;
+        font-weight: bold;
+        line-break: auto;
+    }
+    .mobile-left p {
+        font-size: 20px;
+        line-height: 34px;
+            line-break: auto;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        #hero-btn {
+            background: black;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            padding: .8vh 2.4vw;
+            border-radius: 40px;
+            text-align: center;
+        
+        }
+
+    #hero-btn:hover {
+    background: rgb(54, 54, 54);
+    }
+    .left-secondary {
+        background: #CCCCCC;
+        position: relative;
+        width: 100vw;
+        padding: 60px;
+        
+    }
+
+    .text-secondary {
+        width: 100vw;
+        margin-top: 30px;
+    }
+    .left-secondary div h1 {
+        font-size: 30px;
+        font-weight: bold;
+        line-break: auto;
+        margin-bottom: 16px;
+    }
+    .left-secondary div p {
+        font-size: 20px;
+        line-height: 34px;
+        width: 60vw;
+        line-break: auto;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+
+    .plate-container {
+        display: flex;
+        /* Use flexbox */
+        justify-content: center;
+        /* Horizontally center the content */
+        align-items: center;
+        /* Vertically center the content */
+    }
+
+    .plate {
+        visibility: hidden;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .Ent-main {
+        display: flex;
+        flex-direction: row;
+    }
+    #ent-hero {
+        position: relative;
+        top: 0;
+        background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\KilburnEvent.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 65%;
+        height: 1000px;
+        margin-top: -220px;
+        justify-content: center;
+        color: white;
+    }
+
+    #left {
+        background: white;
+        width: 35%;
+    }
+
+    #left div {
+        position: absolute;
+        width: 35%;
+        bottom: 0;
+        padding-inline: 60px;
+        padding-bottom: 120px;
+    }
+
+    #left div h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-break: auto;
+}
+
+    #left div p {
+    font-size: 20px;
+    line-height: 34px;
+        line-break: auto;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+
+    #hero-btn {
+    background: black;
+    color: white;
+        font-weight: bold;
+        padding: 1vh 2vw;
+        border-radius: 40px;
+        text-align: center;
+    }
+
+    #hero-btn:hover {
+    background: rgb(54, 54, 54);
+    }
+    .left-secondary {
+        background: #CCCCCC;
+        position: relative;
+        width: 100vw;
+        padding: 60px;
+    }
+
+    .text-secondary {
+        width: 100vw;
+        margin-top: 30px;
+    }
+    .left-secondary div h1 {
+        font-size: 30px;
+        font-weight: bold;
+        line-break: auto;
+        margin-bottom: 16px;
+    }
+    .left-secondary div p {
+        font-size: 20px;
+        line-height: 34px;
+        width: 60vw;
+        line-break: auto;
+        font-weight: normal;
+        margin-bottom: 40px;
+    }
+
+    .plate-container {
+        display: flex;
+        /* Use flexbox */
+        justify-content: center;
+        /* Horizontally center the content */
+        align-items: center;
+        /* Vertically center the content */
+    }
+
+    .plate {
+        width: 18vw;
+        height: auto;
+    }
+}

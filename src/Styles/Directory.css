@@ -1,0 +1,186 @@
+/* Directory */
+.directory {
+    justify-content: center;
+    align-items: center;
+}
+#plan {
+    margin: 25px 35%;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+/** Room **/
+
+.room {
+    background: #ffffff;
+    position: relative;
+    border: black 5px solid;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+    line-height: 2.5em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.room:focus {
+    background: rgb(209, 44, 44);
+    transition: .1s;
+}
+
+.room-vert {
+    background: #ffffff;
+    position: relative;
+    border: black 5px solid;
+    writing-mode: vertical-lr;
+    vertical-align: middle;
+    line-height: 1.2em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.room-vert:focus {
+    background: rgb(209, 44, 44);
+    transition: .1s;
+}
+
+
+.room:before {
+    /* window */
+    content: "";
+    position: absolute;
+}
+
+.room:after {
+    /* door */
+    content: "";
+    position: absolute;
+}
+
+.roomName {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 1em;
+    text-orientation: mixed;
+    color: #000000;
+}
+
+
+div[class^="room"]:nth-child(1) {
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 140px;
+    border-right: transparent;
+    border-bottom-width: 2px;
+}
+
+div[class^="room"]:nth-child(2) {
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 160px;
+    border-left: 4px solid #000;
+    border-right: transparent;
+    border-bottom-width: 4px;
+}
+
+.vert-one {
+    background: grey;
+    border-left: transparent;
+    height: fit-content;
+    width: fit-content;
+}
+
+.vert-two {
+    background: grey;
+        border-right: solid 2px black;
+        border-left: solid 2px black;
+    height: fit-content;
+    width: fit-content;
+}
+
+div[class^="room-vert-one"]:nth-child(1) {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 54px;
+    border-left: 4px solid;
+    border-image: linear-gradient(to bottom, black 40%, transparent 40%, transparent 50%, transparent 50%, transparent 60%, black 60%) 5;
+    border-right: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+}
+
+.border-line {
+    background: black;
+    width: 20px;
+    height: 4px;
+}
+
+div[class^="room-vert-one"]:nth-child(3) {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 54px;
+    border-left: 4px solid;
+    border-image: linear-gradient(to bottom, black 40%, transparent 40%, transparent 50%, transparent 50%, transparent 60%, black 60%) 5;
+    border-right: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+}
+
+div[class^="room-vert-two"]:nth-child(1) {
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 54px;
+    border-right: 4px solid;
+    border-image: linear-gradient(to bottom, black 40%, transparent 40%, transparent 50%, transparent 50%, transparent 60%, black 60%) 5;
+    border-left: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+}
+
+div[class^="room-vert-two"]:nth-child(3) {
+    left: 0;
+    top: 0;
+    width: 20px;
+        height: 54px;
+        border-right: 4px solid;
+        border-image: linear-gradient(to bottom, black 40%, transparent 40%, transparent 50%, transparent 50%, transparent 60%, black 60%) 5;
+        border-left: transparent;
+        border-top: transparent;
+    border-bottom: transparent;
+}
+
+.border-line {
+    background: black;
+    width: 20px;
+    height: 4px;
+}
+div[class^="room-vert-one"]:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 20px;
+        height: 54px;
+        border-right: 4px solid;
+        border-image: linear-gradient(to bottom, black 40%, transparent 40%, transparent 50%, transparent 50%, transparent 60%, black 60%) 5;
+        border-left: transparent;
+        border-top: transparent;
+        border-bottom: transparent;
+}
+
+div[class^="room"]:nth-child(5) {
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 160px;
+        border-bottom: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        border-top: solid 4px;
+        border-image: linear-gradient(to right, black 35%, red 35%, red 50%, red 50%, red 65%, black 65%) 5;
+        border-bottom-width: 4px;
+}

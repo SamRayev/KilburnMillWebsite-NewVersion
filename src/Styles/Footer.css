@@ -1,0 +1,27 @@
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+    width: 100%;
+    border-bottom: 20px solid #0099ff;
+    margin-top: auto;
+}
+
+.line {
+    background: white;
+    width: calc(100% - 120px);
+    margin-left: 60px;
+    height: 1px;
+}
+
+.footer-links {
+    margin-block: 10px;
+    padding-inline: 60px;
+    font-size: 12px;
+}
+
+/* Directory */
+.directory {
+    justify-content: center;
+    align-items: center;
+}

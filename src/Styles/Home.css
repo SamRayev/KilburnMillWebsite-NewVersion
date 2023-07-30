@@ -1,0 +1,440 @@
+/* Home */
+
+@media screen and (min-width: 769px) {
+.home {
+    display: grid;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    top: 0;
+    background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\HeroImage.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1000px;
+    margin-top: -170px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.hero h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.hero p {
+    width: 80%;
+}
+.hero .hero-btn {
+    background: #0099ff;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 1vh 3vw;
+    border-radius: 40px;
+}
+
+.hero .hero-btn:hover {
+    background: #48b6ff;
+}
+
+/* Events */
+
+.events {
+    position: relative;
+    background: white;
+    width: 100vw;
+    padding-inline: 60px;
+    padding-block: 60px;
+}
+
+.events h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.events p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.scroll-group>.row {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.scroll-group>.row>.col-xs-4 {
+    display: inline-block;
+    width: 180px;
+    float: none;
+}
+
+.card {
+    display: flex;
+    min-width: 500px;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 8px;
+    max-width: 300px;
+}
+
+.card .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-description {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.card .card-date {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* History */
+
+
+#history {
+    background: #bbbbbb;
+    background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\BostonMap.jpg');
+        background-size: cover;
+        background-blend-mode: lighten;
+    position: relative;
+    width: 100vw;
+    padding: 60px;
+    height: fit-content;
+    align-items: center;
+}
+
+#history div h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-break: auto;
+    margin-bottom: 16px;
+}
+
+#history div p {
+    font-size: 20px;
+}
+
+.history-text {
+    width: 65%;
+    font-weight: bold;
+}
+
+.history-container {
+    display: flex;
+    /* Use flexbox */
+    width: 35%;
+    padding-right: 72px;
+    justify-content: center;
+    /* Horizontally center the content */
+    align-items: center;
+    /* Vertically center the content */
+}
+
+.history-img {
+    width: 400px;
+    height: auto;
+}
+
+.contact {
+    width: 100vw;
+    align-items: center;
+}
+
+.contact p {
+    width: 80vw;
+    align-items: center;
+}
+
+.contact h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contact form {
+    width: fit-content;
+    margin-top: 20px;
+    border: #000000 solid 2px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact button {
+    background: #0099ff;
+    padding: 4px 8px;
+    border-radius: 2px;
+    outline: auto;
+}
+
+.contact button:hover {
+    background: #48b6ff;
+}
+
+.item-img {
+    width: 300px;
+    height: auto;
+}
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    opacity: 0;
+    animation: fade-in 0.3s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in-out {
+    animation: fade-in-out 4s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in-out {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .popup-message {
+    margin-bottom: 10px;
+  }
+  
+  .invalid {
+    border-color: red;
+  }
+
+@media screen and (max-width: 768px) {
+    .home {
+        display: grid;
+        align-items: center;
+    }
+    
+    .hero {
+        position: relative;
+        top: 0;
+        background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\HeroImage.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 1000px;
+        margin-top: -170px;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    
+    .hero::-webkit-scrollbar {
+        width: 0 !important
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .hero p {
+        width: 80%;
+    }
+    .hero .hero-btn {
+        background: #0099ff;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 1vh 3vw;
+        border-radius: 40px;
+    }
+    
+    .hero .hero-btn:hover {
+        background: #48b6ff;
+    }
+    
+    /* Events */
+    
+    .events {
+        position: relative;
+        background: white;
+        width: 100vw;
+        padding-inline: 60px;
+        padding-block: 60px;
+    }
+    
+    .events h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .events p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .scroll-group>.row {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+    
+    .scroll-group>.row>.col-xs-4 {
+        display: inline-block;
+        width: 180px;
+        float: none;
+    }
+    
+    .card {
+        display: flex;
+        min-width: 300px;
+        flex-direction: column;
+        border-radius: 8px;
+        padding: 8px;
+        max-width: 300px;
+    }
+    
+    .card .card-image {
+        width: 100%;
+        height: auto;
+        border-radius: 2px;
+        margin-bottom: 10px;
+    }
+    
+    .card .card-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .card .card-description {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+    
+    .card .card-date {
+        font-size: 14px;
+        color: #000000;
+    }
+    
+    /* History */
+    
+#history {
+    background: #bbbbbb;
+    background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\BostonMap.jpg');
+        background-size: cover;
+        background-blend-mode: lighten;
+    position: relative;
+    width: 100vw;
+    padding: 60px;
+    height: fit-content;
+    align-items: center;
+}
+
+#history div h1 {
+    font-size: 36px;
+    font-weight: bold;
+    line-break: auto;
+    margin-bottom: 16px;
+}
+
+#history div p {
+    font-size: 20px;
+}
+
+.history-text {
+    width: 65%;
+    font-weight: bold;
+}
+
+.history-container {
+    visibility: hidden;
+    width: 0%;
+}
+
+.history-img {
+    width: 100vw;
+    height: auto;
+}
+
+    .contact {
+        width: 100vw;
+        align-items: center;
+    }
+    
+    .contact p {
+        width: 80vw;
+        align-items: center;
+    }
+    
+    .contact h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .contact form {
+        width: fit-content;
+        margin-top: 20px;
+        border: #000000 solid 2px;
+        padding: 6px 8px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .contact button {
+        background: #0099ff;
+        padding: 4px 8px;
+        border-radius: 2px;
+        outline: auto;
+    }
+    
+    .contact button:hover {
+        background: #48b6ff;
+    }
+    
+    .item-img {
+        width: 300px;
+        height: auto;
+    }
+}
