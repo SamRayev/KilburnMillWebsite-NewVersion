@@ -6,28 +6,28 @@ The languages used to create this website are <u Javascript, CSS, and HTML>. <u 
 To edit the content on the homepage of the website, navigate to the "home.jsx" file in the "client/src/Pages" directory. To edit the styling of the homepage, navigate to the "client/src/Styles/Home.css" file. 
 
  #### The Hero Image 
-    The hero image is the largest and top-most image on the home page. In order to change the hero image, navigate to the Home.css file and find the ".hero" section. In this section, the background-image attribute is defined by the following image url: '../Assets/HeroImage.jpg'. The images are located in the Assets folder. In order to change the image, add a new picture to the 'Assets' folder and change the 'HeroImage.jpg' part of the background-image url and save the file.
+The hero image is the largest and top-most image on the home page. In order to change the hero image, navigate to the Home.css file and find the ".hero" section. In this section, the background-image attribute is defined by the following image url: '../Assets/HeroImage.jpg'. The images are located in the Assets folder. In order to change the image, add a new picture to the 'Assets' folder and change the 'HeroImage.jpg' part of the background-image url and save the file.
 
  #### The Event Carousel
-    The event carousel is positioned below the hero image. Each event is written in the code as a card component. The following shows the code:
-    ```javascript
-    <Card
-        image={Image_Name}
-        description="This is Card 1."
-        date="July 10, 2023"
-    />
-    ```
+The event carousel is positioned below the hero image. Each event is written in the code as a card component. The following shows the code:
+```javascript
+<Card
+    image={Image_Name}
+    description="This is Card 1."
+    date="July 10, 2023"
+/>
+```
 
-    In order to set an image to an event, it must be imported at the top of the file from the Assets folder. For example: 
-    ```javascript
-    import Image_Name from "../Assets/HeroImage.jpg"
-    ```
+In order to set an image to an event, it must be imported at the top of the file from the Assets folder. For example: 
+```javascript
+import Image_Name from "../Assets/HeroImage.jpg"
+```
 
-    The "Image_Name" can be called whatever the user prefers; however, it must match what is put in the {Image_Name} section of the card. Additionally, the description and date of each individual card can be changed. In order to add more cards to the carousel, copy and paste the following code template and update it as needed:
-    ```javascript
-    <Card
-        image={Image_Name}
-        description="This is Card 1."
-        date="July 10, 2023"
-    />
-    ```
+The "Image_Name" can be called whatever the user prefers; however, it must match what is put in the {Image_Name} section of the card. Additionally, the description and date of each individual card can be changed. In order to add more cards to the carousel, copy and paste the following code template and update it as needed:
+```javascript
+<Card
+    image={Image_Name}
+    description="This is Card 1."
+    date="July 10, 2023"
+/>
+```
