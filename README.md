@@ -31,3 +31,6 @@ The **"Image_Name"** can be called whatever the user prefers; however, it must m
     date="July 10, 2023"
 />
 ```
+
+ #### The Contact Form
+ The contact form is located below the history section. When a user signs up for the newsletter, their email will be saved to the **emails.txt** file in the server folder.
