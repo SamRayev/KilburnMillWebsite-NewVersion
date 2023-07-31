@@ -36,6 +36,8 @@ const Room = ({ id, coords }) => {
         y={coords[0].y + 240}
         fill="red"
         fontSize="180"
+        fontWeight={700}
+        
       >
         {id}
       </text>

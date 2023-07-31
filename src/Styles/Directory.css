@@ -5,9 +5,8 @@
 }
 #plan {
     margin: 25px 35%;
-    width: 400px;
-    display: flex;
-    flex-direction: row;
+    width: 80vw;
+    
 }
 
 /** Room **/
