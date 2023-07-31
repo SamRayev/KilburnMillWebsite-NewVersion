@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# The Kilburn Mill at Clark's Cove
+The following explains the use and maintenance of the Kilburn Mill website.
+The languages used to create this website are <u Javascript, CSS, and HTML>. <u Javascript> is responsible for the functionality of the website, such as handling the submitted emails and page sizing to make the content fit different screen sizes. Every page and component is available in the "client/src/Pages" and "client/src/Components" directories. <u CSS> is responsible for the styling of the page and each component- how each of the elements on the page look and are oriented. Every individual page has its own stylesheet/CSS file, which is available in the "client/src/Styles" directory. Additionally, every image is located in the "Assets" folder. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. ## The Homepage
+To edit the content on the homepage of the website, navigate to the "home.jsx" file in the "client/src/Pages" directory. To edit the styling of the homepage, navigate to the "client/src/Styles/Home.css" file. 
 
-## Available Scripts
+ #### The Hero Image 
+    The hero image is the largest and top-most image on the home page. In order to change the hero image, navigate to the Home.css file and find the ".hero" section. In this section, the background-image attribute is defined by the following image url: '../Assets/HeroImage.jpg'. The images are located in the Assets folder. In order to change the image, add a new picture to the 'Assets' folder and change the 'HeroImage.jpg' part of the background-image url and save the file.
 
-In the project directory, you can run:
+ #### The Event Carousel
+    The event carousel is positioned below the hero image. Each event is written in the code as a card component. The following shows the code:
+    ```javascript
+    <Card
+        image={Image_Name}
+        description="This is Card 1."
+        date="July 10, 2023"
+    />
+    ```
 
-### `npm start`
+    In order to set an image to an event, it must be imported at the top of the file from the Assets folder. For example: 
+    ```javascript
+    import Image_Name from "../Assets/HeroImage.jpg"
+    ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    The "Image_Name" can be called whatever the user prefers; however, it must match what is put in the {Image_Name} section of the card. Additionally, the description and date of each individual card can be changed. In order to add more cards to the carousel, copy and paste the following code template and update it as needed:
+    ```javascript
+    <Card
+        image={Image_Name}
+        description="This is Card 1."
+        date="July 10, 2023"
+    />
+    ```
+    

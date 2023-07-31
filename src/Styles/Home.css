@@ -256,7 +256,7 @@
     .hero {
         position: relative;
         top: 0;
-        background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\HeroImage.jpg');
+        background-image: url('../Assets/HeroImage.jpg');
         background-size: cover;
         background-position: center;
         width: 100%;
