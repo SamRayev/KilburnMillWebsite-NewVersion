@@ -21,11 +21,13 @@
     #left {
         visibility: hidden;
     }
+    
     .mobile-left {
-        background: white;
+        background: whitesmoke;
         width: 100%;
         padding: 60px;
     }
+    
     .mobile-left h1 {
         font-size: 30px;
         font-weight: bold;
@@ -34,24 +36,24 @@
     .mobile-left p {
         font-size: 20px;
         line-height: 34px;
-            line-break: auto;
-            font-weight: normal;
-            margin-bottom: 30px;
-        }
+        line-break: auto;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
 
-        #hero-btn {
-            background: black;
-            font-size: 14px;
-            color: white;
-            font-weight: bold;
-            padding: .8vh 2.4vw;
-            border-radius: 40px;
-            text-align: center;
-        
-        }
+    #hero-btn {
+        background: black;
+        font-size: 14px;
+        color: white;
+        font-weight: bold;
+        padding: .8vh 2.4vw;
+        border-radius: 40px;
+        text-align: center;
+    
+    }
 
     #hero-btn:hover {
-    background: rgb(54, 54, 54);
+        background: rgb(54, 54, 54);
     }
     .left-secondary {
         background: #CCCCCC;
@@ -65,12 +67,14 @@
         width: 100vw;
         margin-top: 30px;
     }
+
     .left-secondary div h1 {
         font-size: 30px;
         font-weight: bold;
         line-break: auto;
         margin-bottom: 16px;
     }
+
     .left-secondary div p {
         font-size: 20px;
         line-height: 34px;
@@ -99,6 +103,7 @@
         display: flex;
         flex-direction: row;
     }
+
     #ent-hero {
         position: relative;
         top: 0;
@@ -113,7 +118,7 @@
     }
 
     #left {
-        background: white;
+        background: whitesmoke;
         width: 35%;
     }
 
@@ -126,22 +131,22 @@
     }
 
     #left div h1 {
-    font-size: 30px;
-    font-weight: bold;
-    line-break: auto;
-}
+        font-size: 30px;
+        font-weight: bold;
+        line-break: auto;
+    }
 
     #left div p {
-    font-size: 20px;
-    line-height: 34px;
+        font-size: 20px;
+        line-height: 34px;
         line-break: auto;
         font-weight: normal;
         margin-bottom: 30px;
     }
 
     #hero-btn {
-    background: black;
-    color: white;
+        background: black;
+        color: white;
         font-weight: bold;
         padding: 1vh 2vw;
         border-radius: 40px;
@@ -149,8 +154,9 @@
     }
 
     #hero-btn:hover {
-    background: rgb(54, 54, 54);
+        background: rgb(54, 54, 54);
     }
+
     .left-secondary {
         background: #CCCCCC;
         position: relative;
@@ -162,6 +168,7 @@
         width: 100vw;
         margin-top: 30px;
     }
+
     .left-secondary div h1 {
         font-size: 30px;
         font-weight: bold;

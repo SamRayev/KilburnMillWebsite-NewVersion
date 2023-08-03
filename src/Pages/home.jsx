@@ -1,77 +1,37 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import { NavLink } from 'react-router-dom'
 import Card from '../Components/Event/card'
 import Image from "../Assets/HeroImage.jpg"
 import HistoryImage from "../Assets/KilburnHistory.jpg"
 import { ScrollContainer } from 'react-indiana-drag-scroll';
+import emailjs from '@emailjs/browser';
 import "../Styles/Home.css"
 import 'react-indiana-drag-scroll/dist/style.css';
 
 const Home = () => {
-  const [email, setEmail] = useState('');
-  const [isEmailValid, setIsEmailValid] = useState(true);
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [submittedEmails, setSubmittedEmails] = useState([]);
+  const form = useRef();
+  const [inputValues, setInputValues] = useState({
+    user_email: '',
+  });
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-    setIsEmailValid(true); // Reset the validation status when the email is changed
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setInputValues((prevValues) => ({
+      ...prevValues,
+      [name]: value
+    }));
   };
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
-    // Validate the email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      setIsEmailValid(false);
-      setIsPopupVisible(true);
-      return;
-    }
-
-    // Check if the email has already been submitted
-    if (submittedEmails.includes(email)) {
-      setIsEmailValid(false);
-      setIsPopupVisible(true);
-      return;
-    }
-
-    // Send the email to the server for processing
-    fetch('/api/store-email', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Email stored successfully:', data);
-        // Add the submitted email to the list
-        setSubmittedEmails((prevEmails) => [...prevEmails, email]);
-        // Reset the form
-        setEmail('');
-      })
-      .catch((error) => {
-        console.error('Error storing email:', error);
+    emailjs.sendForm('service_xkdeb51', 'template_7p0r11p', form.current, 'mwL-BIF7A2BTUfsXe')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
       });
   };
-
-  const handlePopupClose = () => {
-    setIsPopupVisible(false);
-  };
-
-  useEffect(() => {
-    if (isPopupVisible) {
-      const timer = setTimeout(() => {
-        setIsPopupVisible(false);
-      }, 4000);
-
-      return () => {
-        clearTimeout(timer);
-      };
-    }
-  }, [isPopupVisible]);
 
   return (
     <div className='home flex flex-col'>
@@ -146,25 +106,9 @@ const Home = () => {
       <div className='contact pt-16 pb-16 flex flex-col justify-center text-center'>
         <h2 className='text-center'>STAY CONNECTED</h2>
         <p className='text-center'>Register for our newsletter to stay updated on the latest upcoming events!</p>
-        <form onSubmit={handleSubmit}>
-          <input
-            className={`focus:outline-none ${!isEmailValid ? 'invalid' : ''}`}
-            placeholder="Enter your email"
-            required
-            type="text"
-            value={email}
-            onChange={handleEmailChange}
-          />
-          {!isEmailValid && isPopupVisible && (
-            <div className="popup fade-in-out">
-              <p className="popup-message">
-                {submittedEmails.includes(email)
-                  ? 'Email Already Submitted'
-                  : 'Invalid Email Format'}
-              </p>
-            </div>
-          )}
-          <button type="submit">SIGN UP</button>
+        <form ref={form} onSubmit={sendEmail}>
+          <input className={`focus:outline-none`} placeholder="Enter your email" required type="email" value={inputValues.user_email} onChange={handleInputChange} name="user_email" />
+          <input className="submit-btn" type="submit" value="SIGN UP" />
         </form>
       </div>
     </div>

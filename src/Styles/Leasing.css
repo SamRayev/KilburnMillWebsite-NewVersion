@@ -22,7 +22,7 @@
         visibility: hidden;
     }
     .mobile-left {
-        background: white;
+        background: whitesmoke;
         width: 100%;
         padding: 60px;
     }
@@ -100,7 +100,7 @@
     }
 
     #left {
-        background: white;
+        background: whitesmoke;
         width: 35%;
     }
 

@@ -182,14 +182,14 @@
     text-align: center;
 }
 
-.contact button {
+.contact .submit-btn {
     background: #0099ff;
     padding: 4px 8px;
     border-radius: 2px;
     outline: auto;
 }
 
-.contact button:hover {
+.contact .submit-btn:hover {
     background: #48b6ff;
 }
 
@@ -422,14 +422,14 @@
         text-align: center;
     }
     
-    .contact button {
+    .contact .submit-btn {
         background: #0099ff;
         padding: 4px 8px;
         border-radius: 2px;
         outline: auto;
     }
     
-    .contact button:hover {
+    .contact .submit-btn:hover {
         background: #48b6ff;
     }
     
