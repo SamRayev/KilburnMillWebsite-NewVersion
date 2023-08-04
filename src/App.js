@@ -7,6 +7,7 @@ import Entertainment from "./Pages/entertainment";
 import Weddings from "./Pages/weddings";
 import Contact from "./Pages/contact";
 import Gallery from "./Pages/gallery";
+import Events from "./Pages/events";
 import Leasing from "./Pages/leasing";
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/weddings" element={<Weddings />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/gallery" element={<Gallery />}></Route>
+            <Route path="/events" element={<Events />}></Route>
             <Route path="/leasing" element={<Leasing />}></Route>
           </Routes>
         </div>

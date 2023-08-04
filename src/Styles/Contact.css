@@ -84,9 +84,10 @@
         font-weight: normal;
         margin-bottom: 40px;
     }
-        
+     
     .contact-form {
         width: 100vw;
+        border: dashed black 2px;
         align-items: center;
     }
 
@@ -101,14 +102,22 @@
     }
 
     .contact-form form {
-        width: fit-content;
+        min-width: fit-content;
+        width: 40vw;
         margin-top: 20px;
         border: #000000 solid 2px;
-        padding: 6px 8px;
+        padding: 6px 12px;
         border-radius: 4px;
         align-items: center;
         justify-content: center;
         text-align: center;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .contact-form form div{
+        min-width: fit-content;
+        width: 40vw;
     }
 
     .contact-form .submit-btn {

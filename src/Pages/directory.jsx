@@ -41,7 +41,7 @@ const RoomList = ({ rooms, onRoomSelect }) => {
     <ul>
       {rooms.map((room) => (
         <li key={room.id} onClick={() => onRoomSelect(room.id)}>
-          Room {room.id}
+          Suite {room.id}, {room.name}
         </li>
       ))}
     </ul>
@@ -50,7 +50,7 @@ const RoomList = ({ rooms, onRoomSelect }) => {
 
 const Directory = () => {
   const [rooms, setRooms] = useState([
-    { id: 1, position: { x: 51, y: 50 }, size: { width: 40, height: 130 } },
+    { id: 289, name: "Chop Shop", position: { x: 51, y: 50 }, size: { width: 40, height: 130 } },
     { id: 2, position: { x: 90, y: 50 }, size: { width: 80, height: 140 } },
     { id: 3, position: { x: 158, y: 50 }, size: { width: 12, height: 90 } },
     { id: 4, position: { x: 158, y: 50 }, size: { width: 12, height: 45 } },

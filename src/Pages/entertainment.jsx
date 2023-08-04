@@ -14,7 +14,7 @@ const Entertainment = () => {
                             national acts in the genres of music, comedy, performance
                             theater, rooftop events and a celebrity speaker series.</p>
                         <ul className='flex'>
-                            <NavLink to='/directory' id='hero-btn'>VIEW EVENTS</NavLink>
+                            <NavLink to='/events' id='hero-btn'>VIEW EVENTS</NavLink>
                         </ul>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const Entertainment = () => {
                     national acts in the genres of music, comedy, performance
                     theater, rooftop events and a celebrity speaker series.</p>
                 <ul className='flex'>
-                    <NavLink to='/directory' id='hero-btn'>VIEW EVENTS</NavLink>
+                    <NavLink to='/events' id='hero-btn'>VIEW EVENTS</NavLink>
                 </ul>
             </div>
             <div className='left-secondary flex flex-row'>
@@ -35,7 +35,7 @@ const Entertainment = () => {
                     <p>Visit the rooftop Performance Center, which boasts the best sunset on the south coast and
                         a postcard view of Buzzards Bay. In addition to any show or event, Kilburn Mill offers guests
                         a variety of great dining options. There is something for everyone! </p>
-                    <NavLink to='/directory' id='hero-btn'>MENU</NavLink>
+                    <NavLink to='/events' id='hero-btn'>MENU</NavLink>
                 </div>
                 <div className='plate-container'>
                     <img className='plate' src={Plate} alt='KilburnMill.png' />

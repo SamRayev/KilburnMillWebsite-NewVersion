@@ -115,8 +115,8 @@
 #history {
     background: #bbbbbb;
     background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\BostonMap.jpg');
-        background-size: cover;
-        background-blend-mode: lighten;
+    background-size: cover;
+    background-blend-mode: screen;
     position: relative;
     width: 100vw;
     padding: 60px;
@@ -159,6 +159,7 @@
 .contact {
     width: 100vw;
     align-items: center;
+    border: dashed black 2px;
 }
 
 .contact p {
@@ -361,8 +362,8 @@
 #history {
     background: #bbbbbb;
     background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\BostonMap.jpg');
-        background-size: cover;
-        background-blend-mode: lighten;
+    background-size: cover;
+    background-blend-mode: screen;
     position: relative;
     width: 100vw;
     padding: 60px;
@@ -399,6 +400,7 @@
     .contact {
         width: 100vw;
         align-items: center;
+        border: dashed black 2px;
     }
     
     .contact p {

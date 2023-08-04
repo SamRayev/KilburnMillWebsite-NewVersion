@@ -10,27 +10,17 @@ import 'react-indiana-drag-scroll/dist/style.css';
 
 const Home = () => {
   const form = useRef();
-  const [inputValues, setInputValues] = useState({
-    user_email: '',
-  });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setInputValues((prevValues) => ({
-      ...prevValues,
-      [name]: value
-    }));
-  };
-
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_xkdeb51', 'template_7p0r11p', form.current, 'mwL-BIF7A2BTUfsXe')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
+    try {
+    await emailjs.sendForm('service_xkdeb51', 'template_7p0r11p', form.current, 'mwL-BIF7A2BTUfsXe') // Change these ID's to the proper account ID's
+    console.log('Email sent successfully');
+    form.current.reset(); // Clear the form fields
+    } catch (error) {
+    console.error('Error sending email:', error);
+    }
   };
 
   return (
@@ -47,46 +37,55 @@ const Home = () => {
       <div className='events flex flex-col'>
         <div className='scroll-group'>
           <ScrollContainer className='row gap-4 flex flex-row'>
-            <Card
-              image={Image}
-              description="This is Card 1."
-              date="July 10, 2023"
-            />
-            <Card
-              image={Image}
-              description="This is Card 1."
-              date="July 10, 2023"
-            />
-            <Card
-              image={Image}
-              description="This is Card 1."
-              date="July 10, 2023"
-            />
-            <Card
-              image={Image}
-              description="This is Card 1."
-              date="July 10, 2023"
-            />
-            <Card
-              image={Image}
-              description="This is Card 1."
-              date="July 10, 2023"
-            />
-            <Card
-              image={Image}
-              description="This is Card 1."
-              date="July 10, 2023"
-            />
-            <Card
-              image={Image}
-              description="This is Card 1."
-              date="July 10, 2023"
-            />
-            <Card
-              image={Image}
-              description="This is Card 1."
-              date="July 10, 2023"
-            />
+            <NavLink to='/events'>
+              <Card
+                image={Image}
+                description="This is Card 1."
+                date="July 10, 2023"
+              />
+            </NavLink>
+            <NavLink to='/events'>
+              <Card
+                image={Image}
+                description="This is Card 1."
+                date="July 10, 2023"
+              />
+            </NavLink>
+            <NavLink to='/events'>
+              <Card
+                image={Image}
+                description="This is Card 1."
+                date="July 10, 2023"
+              />
+            </NavLink>
+            <NavLink to='/events'>
+              <Card
+                image={Image}
+                description="This is Card 1."
+                date="July 10, 2023"
+              />
+            </NavLink>
+            <NavLink to='/events'>
+              <Card
+                image={Image}
+                description="This is Card 1."
+                date="July 10, 2023"
+              />
+            </NavLink>
+            <NavLink to='/events'>
+              <Card
+                image={Image}
+                description="This is Card 1."
+                date="July 10, 2023"
+              />
+            </NavLink>
+            <NavLink to='/events'>
+              <Card
+                image={Image}
+                description="This is Card 1."
+                date="July 10, 2023"
+              />
+            </NavLink>
           </ScrollContainer>
         </div>
       </div>
@@ -107,7 +106,7 @@ const Home = () => {
         <h2 className='text-center'>STAY CONNECTED</h2>
         <p className='text-center'>Register for our newsletter to stay updated on the latest upcoming events!</p>
         <form ref={form} onSubmit={sendEmail}>
-          <input className={`focus:outline-none`} placeholder="Enter your email" required type="email" value={inputValues.user_email} onChange={handleInputChange} name="user_email" />
+          <input className={`focus:outline-none`} placeholder="Your Email" required type="email" name="user_email" />
           <input className="submit-btn" type="submit" value="SIGN UP" />
         </form>
       </div>
