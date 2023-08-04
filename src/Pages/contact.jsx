@@ -9,7 +9,7 @@ const Contact = () => {
         e.preventDefault();
 
         try {
-        await emailjs.sendForm('service_xkdeb51', 'template_kk3vnft', form.current, 'mwL-BIF7A2BTUfsXe')
+        await emailjs.sendForm('service_xkdeb51', 'template_kk3vnft', form.current, 'mwL-BIF7A2BTUfsXe') // Change these ID's to the proper account ID's
         console.log('Email sent successfully');
         form.current.reset(); // Clear the form fields
         } catch (error) {
@@ -39,13 +39,13 @@ const Contact = () => {
             </div>
             <div className='contact-form pt-16 pb-16 flex flex-col justify-center text-center'>
                 <h2 className='text-center'>SEND US AN EMAIL</h2>
-                <p className='text-center'>Whether it's a simple question or you need a space for your business, send email to get in contact with us at Kilburn and we'll try to get back to you as soon as possible!</p>
+                <p className='text-center'>Whether it's a simple question or you need a space for your business, send email to get in contact with us and we'll try to get back to you as soon as possible!</p>
                 <form ref={form} onSubmit={sendEmail}>
-                    <div className='flex flex-col gap-2'>
-                        <input className={`focus:outline-none bg-blue-100 p-2 rounded`} type="text" placeholder="Your Name" name="user_name" />
-                        <input className={`focus:outline-none bg-blue-100 p-2 rounded`} placeholder="Your Email" required type="email" name="user_email" />
-                        <textarea className={`focus:outline-none bg-blue-100 p-2 rounded`} placeholder="Message..." name="message" />
-                        <input className="submit-btn cursor-pointer" type="submit" value="SUBMIT" />
+                    <div className='flex flex-col gap-2 mt-0.5 mb-0.5'>
+                        <input className={`focus:outline-none bg-gray-100 p-2 rounded`} type="text" placeholder="Your Name" name="user_name" />
+                        <input className={`focus:outline-none bg-gray-100 p-2 rounded`} placeholder="Your Email" required type="email" name="user_email" />
+                        <textarea className={`focus:outline-none bg-gray-100 p-2 rounded`} placeholder="Message..." name="message" />
+                        <input className="submit-btn focus:outline-none cursor-pointer" type="submit" value="SUBMIT" />
                     </div>
                 </form>
             </div>
