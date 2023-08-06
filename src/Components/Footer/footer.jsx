@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
 import "../../Styles/Footer.css"
 const Footer = () => {
     return (
@@ -19,6 +21,10 @@ const Footer = () => {
                     <NavLink className="link" to="/isolation-gallery">ISOLATION GALLERY</NavLink>
                     <NavLink className="link" to="/leasing">LEASING</NavLink>
                     <a className="link" href="tel:508-990-3500">508-990-3500</a>
+                    <div>
+                        <a className='mr-1' href='https://www.instagram.com/kilburnmillatclarkscove/'><InstagramIcon fontSize='small'/></a>
+                        <a href='https://www.facebook.com/Kilburnmillatclarkscove/'><FacebookIcon fontSize='small'/></a>
+                    </div>
                 </div>
             </div>
             <div className='line' />
