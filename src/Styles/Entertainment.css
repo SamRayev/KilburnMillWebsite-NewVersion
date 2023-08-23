@@ -8,7 +8,7 @@
 
     #ent-hero {
         top: 0;
-        background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\KilburnEvent.jpg');
+        background-image: url('../Assets/KilburnEvent.jpg');
         background-size: cover;
         background-position: center;
         width: auto;
@@ -107,7 +107,7 @@
     #ent-hero {
         position: relative;
         top: 0;
-        background-image: url('C:\Users\Pavli\OtherWebsites\KBMsite\kbm-site\src\Assets\KilburnEvent.jpg');
+        background-image: url('../Assets/KilburnEvent.jpg');
         background-size: cover;
         background-position: center;
         width: 65%;

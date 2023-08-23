@@ -269,12 +269,12 @@ const Home = () => {
     <div className='home flex flex-col font-serif'>
       <div className='hero-box flex flex-col'>
         <ul className='flex gap-6'>
-          <li><NavLink to='null' className='hero-btn'>ENTERTAINMENT</NavLink></li>
-          <li><NavLink to='null' className='hero-btn'>WEDDINGS</NavLink></li>
-          <li><NavLink to='null' className='hero-btn'>EVENTS</NavLink></li>
-          <li><NavLink to='null' className='hero-btn'>GALLERY</NavLink></li>
-          <li><NavLink to='null' className='hero-btn'>LEASING</NavLink></li>
-          <li><NavLink to='null' className='hero-btn'>CONTACT</NavLink></li>
+          <li><NavLink to='/events' className='hero-btn'>EVENTS</NavLink></li>
+          <li><NavLink to='/weddings' className='hero-btn'>WEDDINGS</NavLink></li>
+          <li><NavLink to='/entertainment' className='hero-btn'>ENTERTAINMENT</NavLink></li>
+          <li><NavLink to='/gallery' className='hero-btn'>GALLERY</NavLink></li>
+          <li><NavLink to='/leasing' className='hero-btn'>LEASING</NavLink></li>
+          <li><NavLink to='/contact' className='hero-btn'>CONTACT</NavLink></li>
         </ul>
         <div className='flex flex-row'>
           <img src={SplashBorder}></img>

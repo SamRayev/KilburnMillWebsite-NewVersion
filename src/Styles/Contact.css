@@ -8,7 +8,7 @@
 
     #Contact-hero {
         top: 0;
-        background-image: url('C:\Users\Pavli\OtherWebsites\KilburnFinal\client\src\Assets\Contact.jpg');
+        background-image: url('../Assets/Contact.jpg');
         background-size: cover;
         background-position: center;
         width: auto;
@@ -154,7 +154,7 @@ border: black solid 2px;
     #Contact-hero {
         position: relative;
         top: 0;
-        background-image: url('C:\Users\Pavli\OtherWebsites\KilburnFinal\client\src\Assets\Contact.jpg');
+        background-image: url('../Assets/Contact.jpg');
         background-size: cover;
         background-position: center;
         width: 65%;

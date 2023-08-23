@@ -45,6 +45,9 @@ const Header = () => {
             </NavLink>
             {!isMobile && (
                 <div className='sm:hidden links md:flex gap-6'>
+                    <NavLink className='link' to='/'>
+                        HOME
+                    </NavLink>
                     <NavLink className='link' to='/events'>
                         EVENTS
                     </NavLink>
@@ -75,6 +78,9 @@ const Header = () => {
             </div>
             {isMobile && (
                 <div className={`hamburger-menu md:hidden gap-6 pb-20 ${isOpen ? 'active' : ''}`}>
+                    <NavLink className='link-ham' to='/'>
+                        HOME
+                    </NavLink>
                     <NavLink className='link-ham' to='/events'>
                         EVENTS
                     </NavLink>
