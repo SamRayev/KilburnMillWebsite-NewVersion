@@ -25,7 +25,7 @@
     .mobile-left {
         background: white;
         width: 100%;
-        padding: 60px;
+        padding: 40px;
     }
 
     .mobile-left h1 {
@@ -85,51 +85,64 @@
         margin-bottom: 40px;
     }
      
+    
     .contact-form {
         width: 100vw;
-        border: dashed black 2px;
+        height: 70vh;
         align-items: center;
-    }
-
-    .contact-form p {
-        width: 80vw;
-        align-items: center;
-    }
-
-    .contact-form h2 {
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .contact-form form {
-        min-width: fit-content;
-        width: 40vw;
-        margin-top: 20px;
-        border: #000000 solid 2px;
-        padding: 6px 12px;
-        border-radius: 4px;
-        align-items: center;
-        justify-content: center;
         text-align: center;
-        display: flex;
-        flex-flow: column;
     }
 
-    .contact-form form div{
+    .contact-form .form {
+        width: fit-content;
+        background-color: white;
+        align-items: center;
+        border: black solid 6px;
+    }
+
+    .contact-form .form p {
+        width: 500px;
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: normal;
+        align-items: center;
+    }
+
+    .contact-form .form h2 {
+        font-size: 40px;
+        font-weight: bold;
+        border-bottom: black solid 6px;
+    }
+
+    .contact-form .form form {
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-inline: 20px;
+    }
+
+    .contact-form .form form div{
         min-width: fit-content;
-        width: 40vw;
+        width: 100%;
     }
 
-    .contact-form .submit-btn {
-        background: #0099ff;
-        padding: 4px 8px;
-        border-radius: 2px;
-        outline: auto;
+    .contact-form .form .submit-btn {
+        background: black;
+color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 6px 10px;
+border: black solid 2px;
     }
 
-    .contact-form .submit-btn:hover {
-        background: #48b6ff;
+    .contact-form .form .submit-btn:hover {
+        background: white;
+        color: black;
     }
+    
 }
 
 @media screen and (min-width: 769px) {
@@ -221,47 +234,58 @@
     
     .contact-form {
         width: 100vw;
-        border: dashed black 2px;
+        height: 70vh;
         align-items: center;
-    }
-
-    .contact-form p {
-        width: 80vw;
-        align-items: center;
-    }
-
-    .contact-form h2 {
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .contact-form form {
-        min-width: fit-content;
-        width: 40vw;
-        margin-top: 20px;
-        border: #000000 solid 2px;
-        padding: 6px 8px;
-        border-radius: 4px;
-        align-items: center;
-        justify-content: center;
         text-align: center;
-        display: flex;
-        flex-flow: column;
     }
 
-    .contact-form form div{
+    .contact-form .form {
+        width: fit-content;
+        background-color: white;
+        align-items: center;
+        border: black solid 6px;
+    }
+
+    .contact-form .form p {
+        width: 600px;
+        font-size: 20px;
+        margin-top: 20px;
+        font-weight: normal;
+        align-items: center;
+    }
+
+    .contact-form .form h2 {
+        font-size: 40px;
+        font-weight: bold;
+        border-bottom: black solid 6px;
+    }
+
+    .contact-form .form form {
+display: flex;
+flex-direction: column;
+margin-top: 20px;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin-inline: 20px;
+    }
+
+    .contact-form .form form div{
         min-width: fit-content;
-        width: 40vw;
+        width: 100%;
     }
 
-    .contact-form .submit-btn {
-        background: #0099ff;
-        padding: 4px 8px;
-        border-radius: 2px;
-        outline: auto;
+    .contact-form .form .submit-btn {
+        background: black;
+color: white;
+margin-top: 20px;
+margin-bottom: 20px;
+padding: 6px 10px;
+border: black solid 2px;
     }
 
-    .contact-form .submit-btn:hover {
-        background: #48b6ff;
+    .contact-form .form .submit-btn:hover {
+        background: white;
+        color: black;
     }
 }

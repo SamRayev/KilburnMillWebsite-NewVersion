@@ -7,18 +7,15 @@ const Footer = () => {
     return (
         <div className='footer flex flex-col justify-between'>
             <div className='flex flex-row justify-between'>
-                <NavLink to="/">
-                    <div className='logo flex flex-col'>
-                        <p className='logo-item'>
-                            KILBURN MILL
-                        </p>
-                        <p className='footer-p'>
-                            AT CLARKS COVE
-                        </p>
-                    </div>
-                </NavLink>
-                <div className='flex flex-col text-right links gap-1.5 pb-4'>
-                    <NavLink className="link" to="/isolation-gallery">ISOLATION GALLERY</NavLink>
+            <NavLink to="/">
+                <div className='logo flex flex-col'>
+                    <h1>
+                        KILBURN MILL
+                    </h1>
+                </div>
+            </NavLink>
+                <div className='flex flex-col text-white text-right links gap-1 pb-10 pt-4'>
+                    <NavLink className="link" to="/isolation-gallery">CONTACT US</NavLink>
                     <NavLink className="link" to="/leasing">LEASING</NavLink>
                     <a className="link" href="tel:508-990-3500">508-990-3500</a>
                     <div>

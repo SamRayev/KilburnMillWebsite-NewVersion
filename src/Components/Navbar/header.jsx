@@ -37,42 +37,62 @@ const Header = () => {
         <div className='header flex flex-row'>
             <NavLink to="/">
                 <div className='logo flex flex-col'>
-                    <p>
+                    <h1>
                         KILBURN MILL
-                    </p>
-                    <p>
-                        AT CLARKS COVE
-                    </p>
+                    </h1>
+                    
                 </div>
             </NavLink>
             {!isMobile && (
                 <div className='sm:hidden links md:flex gap-6'>
-                    <NavLink className='link' to='/entertainment'>
-                        ENTERTAINMENT
+                    <NavLink className='link' to='/events'>
+                        EVENTS
                     </NavLink>
                     <NavLink className='link' to='/weddings'>
                         WEDDINGS
                     </NavLink>
+                    <NavLink className='link' to='/entertainment'>
+                        ENTERTAINMENT
+                    </NavLink>
+                    <NavLink className='link' to='/gallery'>
+                        GALLERY
+                    </NavLink>
                     <NavLink className='link' to='/leasing'>
                         LEASING
                     </NavLink>
-                    <NavLink className="link-btn" to="/contact">CONTACT US</NavLink>
+                    <NavLink className="link" to="/contact">
+                        CONTACT
+                    </NavLink>
                 </div>
             )}
             <div className="md:hidden lg:hidden flex items-center">
                 <button
                     onClick={toggleMenu}
-                    className="hamburger text-white text-xl focus:outline-none links"
+                    className="hamburger text-black text-xl focus:outline-none links"
                 >
                     {isMobile ? <MenuIcon /> : <MenuIcon />}
                 </button>
             </div>
             {isMobile && (
                 <div className={`hamburger-menu md:hidden gap-6 pb-20 ${isOpen ? 'active' : ''}`}>
-                    <NavLink className="link-ham" to="/entertainment">ENTERTAINMENT</NavLink>
-                    <NavLink className="link-ham" to="/weddings">WEDDINGS</NavLink>
-                    <NavLink className="link-ham" to="/leasing">LEASING</NavLink>
-                    <NavLink className="link-ham" to="/contact">CONTACT US</NavLink>
+                    <NavLink className='link-ham' to='/events'>
+                        EVENTS
+                    </NavLink>
+                    <NavLink className='link-ham' to='/weddings'>
+                        WEDDINGS
+                    </NavLink>
+                    <NavLink className='link-ham' to='/entertainment'>
+                        ENTERTAINMENT
+                    </NavLink>
+                    <NavLink className='link-ham' to='/gallery'>
+                        GALLERY
+                    </NavLink>
+                    <NavLink className='link-ham' to='/leasing'>
+                        LEASING
+                    </NavLink>
+                    <NavLink className="link-ham" to="/contact">
+                        CONTACT
+                    </NavLink>
                 </div>
             )}
         </div>

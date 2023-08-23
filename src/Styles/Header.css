@@ -4,47 +4,34 @@
     top: 0;
     position: fixed;
     width: 100vw;
-    background-color: black;
-    border-top: 20px solid #0099ff;
+    border-top: solid black 20px;
+    background-color: white;
     height: auto;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
+    z-index: 500;
 }
 
 .logo {
     align-items: center;
-    margin: 20px;
     padding-left: 40px;
-    padding-top: 10px;
     cursor: pointer;
     text-align: center;
 }
 
 /* Add hover effect on both p elements */
-.logo p:hover {
+.logo h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    display:inline-block;
+    -webkit-transform:scale(1,.9); /* Safari and Chrome */
+    -moz-transform:scale(1,.9); /* Firefox */
+    -ms-transform:scale(1,.9); /* IE 9 */
+    -o-transform:scale(1,.9); /* Opera */
+    transform:scale(1,.9); /* W3C */
+}
+.logo:hover {
     color: rgb(189, 189, 189);
-}
-
-.logo p:nth-child(1) {
-    color: white;
-    outline: solid white 2px;
-    padding: 6px 12px;
-    font-size: 20px;
-}
-
-.logo p:nth-child(2) {
-    color: white;
-    padding: 4px 12px;
-    font-size: 10px;
-}
-
-.logo:hover p {
-    color: rgb(189, 189, 189);
-}
-
-.logo:hover p:nth-child(1) {
-    outline-color: rgb(189, 189, 189);
 }
 
 .footer-p {
@@ -53,14 +40,14 @@
 
 .links {
     font-size: 14px;
-    margin: 20px;
-    color: white;
+    color: black;
     cursor: pointer;
     padding-right: 40px;
     padding-top: 6px;
 }
 
 .link {
+    font-weight: bold;
     padding-top: 4px;
 }
 .link:hover {
@@ -69,18 +56,20 @@
 
 .hamburger-menu {
     position: fixed;
-    top: 120px;
+    top: 90px;
     left: 0;
     display: none;
     background-color: #000000;
     width: 100%;
     height: 100%;
     justify-content: center;
+    z-index: 900;
 }
 
 .hamburger-menu.active {
     display: flex;
     flex-direction: column;
+    z-index: 900;
 }
 
 .hamburger-menu .link-ham {
@@ -89,23 +78,10 @@
     text-align: center;
     align-items: center;
     padding: 8px;
+    z-index: 900;
 }
 
 .hamburger-menu .link-ham:hover {
     color: #979797;
-}
-
-.link-btn {
-    background: #0099ff;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    padding-inline: 12px;
-    padding-block: 4px;
-    border-radius: 20px;
-}
-
-.link-btn:hover {
-    background:  #48b6ff;
+    z-index: 900;
 }

@@ -1,6 +1,6 @@
 #events-page {
     width: 100vw;
-    padding: 60px;
+    padding: 40px;
     padding-block: 20px;
     overflow: hidden;
     margin-bottom: 40px;
@@ -20,11 +20,10 @@
 
 .card {
     display: flex;
-    min-width: 300px;
     flex-direction: column;
     border-radius: 8px;
     padding: 8px;
-    max-width: 300px;
+    width: 344px;
 }
 
 .card .card-image {
